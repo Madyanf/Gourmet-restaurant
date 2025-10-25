@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سجل الدخول إلى حسابك في مطعم الذواقة">
+    <title>تسجيل الدخول - مطعم الذواقة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>مطعم الذواقة</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">عن المطعم</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">قائمة الطعام</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservation.html" class="nav-link">الحجوزات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">اتصل بنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link active">تسجيل الدخول</a>
+                    <li class="nav-item">
+                    <a href="developers.html" class="nav-link">فريق التطوير  </a>
+                </li>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم تسجيل الدخول -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-header">
+                    <h1>مرحباً بعودتك</h1>
+                    <p>سجل الدخول إلى حسابك للمتابعة</p>
+                </div>
+
+                <div class="login-options">
+                    <button class="login-option-btn active" data-type="customer">عميل</button>
+                    <button class="login-option-btn" data-type="admin">إداري</button>
+                </div>
+
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">كلمة المرور</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="remember" name="remember">
+                            <span class="checkmark"></span>
+                            تذكرني
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">تسجيل الدخول</button>
+
+                    <div class="form-footer">
+                        <p>ليس لديك حساب؟ <a href="register.html">أنشئ حساب جديد</a></p>
+                        <p><a href="forgot-password.html">نسيت كلمة المرور؟</a></p>
+                    </div>
+                </form>
+
+                <!-- تسجيل الدخول بالسوشيال ميديا -->
+                <div class="social-login">
+                    <div class="divider">
+                        <span>أو سجل الدخول باستخدام</span>
+                    </div>
+                    <div class="social-buttons">
+                        <button class="social-btn google-btn">
+                            <span>G</span>
+                            جوجل
+                        </button>
+                        <button class="social-btn facebook-btn">
+                            <span>f</span>
+                            فيسبوك
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>مطعم الذواقة</h3>
+                    <p>أفضل تجربة طعام في اليمن</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="menu.html">قائمة الطعام</a></li>
+                        <li><a href="reservation.html">الحجوزات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li class="nav-item">
+                    <a href="developers.html" class="nav-link">فريق التطوير  </a>
+                </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>معلومات الاتصال</h4>
+                    <p>📞 0123456789</p>
+                    <p>📧 info@althawqa.com</p>
+                    <p>📍 صنعاء، اليمن</p>
+                </div>
+                <div class="footer-section">
+                    <h4>مواعيد العمل</h4>
+                    <p>الأحد - الخميس: 7 ص - 12 م</p>
+                    <p>الجمعة - السبت: 1 ظ - 12 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 مطعم الذواقة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

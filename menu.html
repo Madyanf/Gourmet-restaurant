@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="قائمة طعام مطعم الذواقة - أطباق يمنية وعربية أصيلة">
+    <title>قائمة الطعام - مطعم الذواقة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>مطعم الذواقة</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">عن المطعم</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link active">قائمة الطعام</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservation.html" class="nav-link">الحجوزات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">اتصل بنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">تسجيل الدخول</a>
+                </li>
+                <li class="nav-item">
+                    <a href="developers.html" class="nav-link">فريق التطوير  </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- هيدر الصفحة -->
+    <header class="page-header">
+        <div class="container">
+            <h1>قائمة الطعام</h1>
+            <p>استمتع بأشهى الأطباق اليمنية والعربية</p>
+        </div>
+    </header>
+
+    <!-- فلاتر التصنيفات -->
+    <section class="menu-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="appetizers">المقبلات</button>
+                <button class="filter-btn" data-filter="main-dishes">الأطباق الرئيسية</button>
+                <button class="filter-btn" data-filter="grills">المشويات</button>
+                <button class="filter-btn" data-filter="desserts">الحلويات</button>
+                <button class="filter-btn" data-filter="drinks">المشروبات</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قائمة الطعام -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- قسم المقبلات -->
+            <div class="menu-category" id="appetizers">
+                <h2 class="category-title">المقبلات</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="assets/images/hummus.jpg" alt="حمص بالطحينة">
+                        </div>
+                        <div class="item-details">
+                            <h3>حمص بالطحينة</h3>
+                            <p>حمص طازج مع طحينة وزيت زيتون</p>
+                            <span class="item-price">5,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="assets/images/fattoush.jpg" alt="فتوش">
+                        </div>
+                        <div class="item-details">
+                            <h3>سلطة فتوش</h3>
+                            <p>خضروات طازجة مع خبز مقرمش وتتبيلة خاصة</p>
+                            <span class="item-price">7,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="assets/images/kibbeh.jpg" alt="كبة">
+                        </div>
+                        <div class="item-details">
+                            <h3>كبة مقلية</h3>
+                            <p>كبة برغل محشية باللحم والصنوبر</p>
+                            <span class="item-price">8,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم الأطباق الرئيسية -->
+            <div class="menu-category" id="main-dishes">
+                <h2 class="category-title">الأطباق الرئيسية</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item" data-category="main-dishes">
+                        <div class="item-image">
+                            <img src="assets/images/mandi.jpg" alt="مندي">
+                        </div>
+                        <div class="item-details">
+                            <h3>مندي لحم</h3>
+                            <p>لحم ضأن مطبوخ على البخار مع أرز مندي</p>
+                            <span class="item-price">25,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-dishes">
+                        <div class="item-image">
+                            <img src="assets/images/saltah.jpg" alt="سلتة">
+                        </div>
+                        <div class="item-details">
+                            <h3>سلتة يمنية</h3>
+                            <p>الطبق الوطني اليمني مع اللحم والخضار</p>
+                            <span class="item-price">18,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-dishes">
+                        <div class="item-image">
+                            <img src="assets/images/kabsa.jpg" alt="كبسة">
+                        </div>
+                        <div class="item-details">
+                            <h3>كبسة دجاج</h3>
+                            <p>أرز كبسة مع دجاج وتوابل خاصة</p>
+                            <span class="item-price">20,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم المشويات -->
+            <div class="menu-category" id="grills">
+                <h2 class="category-title">المشويات</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item" data-category="grills">
+                        <div class="item-image">
+                            <img src="assets/images/shish-tawook.jpg" alt="شيش طاووق">
+                        </div>
+                        <div class="item-details">
+                            <h3>شيش طاووق</h3>
+                            <p>دجاج مشوي مع خضار وتتبيلة خاصة</p>
+                            <span class="item-price">22,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="grills">
+                        <div class="item-image">
+                            <img src="assets/images/kebab.jpg" alt="كبة">
+                        </div>
+                        <div class="item-details">
+                            <h3>كبة حلب</h3>
+                            <p>لحم مفروم مشوي مع بهارات</p>
+                            <span class="item-price">24,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم الحلويات -->
+            <div class="menu-category" id="desserts">
+                <h2 class="category-title">الحلويات</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="assets/images/kunafa.jpg" alt="كنافة">
+                        </div>
+                        <div class="item-details">
+                            <h3>كنافة بالنوتيلا</h3>
+                            <p>كنافة مقرمشة مع حشوة النوتيلا</p>
+                            <span class="item-price">12,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="assets/images/basbousa.jpg" alt="بسبوسة">
+                        </div>
+                        <div class="item-details">
+                            <h3>بسبوسة</h3>
+                            <p>حلويات شرقية مع syrup</p>
+                            <span class="item-price">8,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم المشروبات -->
+            <div class="menu-category" id="drinks">
+                <h2 class="category-title">المشروبات</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-image">
+                            <img src="assets/images/coffee.jpg" alt="شاي يمني">
+                        </div>
+                        <div class="item-details">
+                            <h3>شاي يمني</h3>
+                            <p>شاي يمني تقليدي مع نعناع</p>
+                            <span class="item-price">3,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-image">
+                            <img src="assets/images/qishr.jpg" alt="قشر">
+                        </div>
+                        <div class="item-details">
+                            <h3>قشر يمني</h3>
+                            <p>مشروب القشر التقليدي</p>
+                            <span class="item-price">4,000 ريال</span>
+                            <button class="add-to-cart">إضافة إلى الطلب</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- سلة الطلبات -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>طلباتك</h3>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- العناصر تضاف هنا بالجافاسكريبت -->
+        </div>
+        <div class="cart-total">
+            <span>المجموع: </span>
+            <span id="cartTotal">0 ريال</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">إتمام الطلب</button>
+    </div>
+
+    <!-- زر فتح السلة -->
+    <button class="cart-toggle" id="cartToggle">
+        🛒 <span class="cart-count">0</span>
+    </button>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>مطعم الذواقة</h3>
+                    <p>أفضل تجربة طعام في اليمن</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="menu.html">قائمة الطعام</a></li>
+                        <li><a href="reservation.html">الحجوزات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li class="nav-item">
+                    <a href="developers.html" class="nav-link">فريق التطوير  </a>
+                </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>معلومات الاتصال</h4>
+                    <p>📞 0123456789</p>
+                    <p>📧 info@althawqa.com</p>
+                    <p>📍 صنعاء، اليمن</p>
+                </div>
+                <div class="footer-section">
+                    <h4>مواعيد العمل</h4>
+                    <p>الأحد - الخميس: 7 ص - 12 م</p>
+                    <p>الجمعة - السبت: 1 ظ - 12 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 مطعم الذواقة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
