@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="اتصل بمطعم الذواقة - نحن هنا لخدمتك">
+    <title>اتصل بنا - مطعم الذواقة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>مطعم الذواقة</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">عن المطعم</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">قائمة الطعام</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservation.html" class="nav-link">الحجوزات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">اتصل بنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">تسجيل الدخول</a>
+                </li>
+                <li class="nav-item">
+                    <a href="developers.html" class="nav-link">فريق التطوير  </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- هيدر الصفحة -->
+    <header class="page-header">
+        <div class="container">
+            <h1>اتصل بنا</h1>
+            <p>نحن هنا للإجابة على جميع استفساراتك</p>
+        </div>
+    </header>
+
+    <!-- قسم الاتصال -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- نموذج الاتصال -->
+                <div class="contact-form-container">
+                    <form class="reservation-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">الاسم الكامل *</label>
+                            <input type="text" id="contactName" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">البريد الإلكتروني *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">الموضوع *</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">اختر الموضوع</option>
+                                <option value="استفسار">استفسار عام</option>
+                                <option value="شكوى">شكوى</option>
+                                <option value="مقترح">مقترح</option>
+                                <option value="تعاون">طلب تعاون</option>
+                                <option value="其他">أخرى</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">الرسالة *</label>
+                            <textarea id="contactMessage" name="message" rows="6" required placeholder="اكتب رسالتك هنا..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                    </form>
+                </div>
+
+                <!-- معلومات الاتصال -->
+                <div class="contact-info">
+                    <h3>معلومات التواصل</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>العنوان</h4>
+                                <p>شارع التحرير، وسط المدينة<br>صنعاء، اليمن</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>الهاتف</h4>
+                                <p>0123456789<br>00967712345678</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>البريد الإلكتروني</h4>
+                                <p>info@althawqa.com<br>support@althawqa.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-text">
+                                <h4>مواعيد العمل</h4>
+                                <p>الأحد - الخميس: 7 ص - 12 م<br>الجمعة - السبت: 1 ظ - 12 م</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الخريطة -->
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            🗺️ خريطة موقع المطعم
+                        </div>
+                    </div>
+
+                    <!-- وسائل التواصل الاجتماعي -->
+                    <div class="social-links">
+                        <h4>تابعنا على</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">📘</a>
+                            <a href="#" class="social-icon">📷</a>
+                            <a href="#" class="social-icon">🐦</a>
+                            <a href="#" class="social-icon">📹</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>مطعم الذواقة</h3>
+                    <p>أفضل تجربة طعام في اليمن</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="menu.html">قائمة الطعام</a></li>
+                        <li><a href="reservation.html">الحجوزات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li class="nav-item">
+                    <a href="developers.html" class="nav-link">فريق التطوير  </a>
+                </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>معلومات الاتصال</h4>
+                    <p>📞 0123456789</p>
+                    <p>📧 info@althawqa.com</p>
+                    <p>📍 صنعاء، اليمن</p>
+                </div>
+                <div class="footer-section">
+                    <h4>مواعيد العمل</h4>
+                    <p>الأحد - الخميس: 7 ص - 12 م</p>
+                    <p>الجمعة - السبت: 1 ظ - 12 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 مطعم الذواقة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
