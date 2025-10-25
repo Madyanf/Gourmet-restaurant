@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="احجز طاولتك في مطعم الذواقة - تجربة طعام لا تُنسى">
+    <title>الحجوزات - مطعم الذواقة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>مطعم الذواقة</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">عن المطعم</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">قائمة الطعام</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservation.html" class="nav-link active">الحجوزات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">اتصل بنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">تسجيل الدخول</a>
+                </li>
+                <li class="nav-item">
+                    <a href="developers.html" class="nav-link">فريق التطوير  </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- هيدر الصفحة -->
+    <header class="page-header">
+        <div class="container">
+            <h1>حجز طاولة</h1>
+            <p>احجز طاولتك واستمتع بتجربة طعام استثنائية</p>
+        </div>
+    </header>
+
+    <!-- نموذج الحجز -->
+    <section class="reservation-section">
+        <div class="container">
+            <div class="reservation-form-container">
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-group">
+                        <label for="fullName">الاسم الكامل *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">تاريخ الحجز *</label>
+                            <input type="date" id="date" name="date" required>
+                            <span class="error-message" id="dateError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">الوقت *</label>
+                            <select id="time" name="time" required>
+                                <option value="">اختر الوقت</option>
+                                <option value="12:00">12:00 ظهراً</option>
+                                <option value="13:00">01:00 ظهراً</option>
+                                <option value="14:00">02:00 ظهراً</option>
+                                <option value="15:00">03:00 عصراً</option>
+                                <option value="19:00">07:00 مساءً</option>
+                                <option value="20:00">08:00 مساءً</option>
+                                <option value="21:00">09:00 مساءً</option>
+                                <option value="22:00">10:00 مساءً</option>
+                            </select>
+                            <span class="error-message" id="timeError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">عدد الأشخاص *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">اختر عدد الأشخاص</option>
+                            <option value="1">1 شخص</option>
+                            <option value="2">2 أشخاص</option>
+                            <option value="3">3 أشخاص</option>
+                            <option value="4">4 أشخاص</option>
+                            <option value="5">5 أشخاص</option>
+                            <option value="6">6 أشخاص</option>
+                            <option value="7">7 أشخاص</option>
+                            <option value="8">8 أشخاص أو أكثر</option>
+                        </select>
+                        <span class="error-message" id="guestsError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequests">طلبات خاصة</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="أي طلبات خاصة أو مناسبات..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            أرغب في تلقي عروض خاصة وأخبار المطعم
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">تأكيد الحجز</button>
+                </form>
+
+                <div class="reservation-info">
+                    <h3>معلومات الحجز</h3>
+                    <div class="info-card">
+                        <h4>🕒 مواعيد العمل</h4>
+                        <p>الأحد - الخميس: 7 ص - 12 م</p>
+                        <p>الجمعة - السبت: 1 ظ - 12 م</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>👥 سعة المطعم</h4>
+                        <p>طاولات صغيرة: 2-4 أشخاص</p>
+                        <p>طاولات عائلية: 6-8 أشخاص</p>
+                        <p>غرف خاصة: حتى 15 شخص</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>📞 للاستفسار</h4>
+                        <p>هاتف: 0123456789</p>
+                        <p>بريد: info@althawqa.com</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>💡 ملاحظات</h4>
+                        <p>• يرجى الحضور قبل 10 دقائق من الموعد</p>
+                        <p>• يمكن إلغاء الحجز قبل 3 ساعات</p>
+                        <p>• تتوفر أماكن مخصصة للعائلات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>مطعم الذواقة</h3>
+                    <p>أفضل تجربة طعام في اليمن</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="menu.html">قائمة الطعام</a></li>
+                        <li><a href="reservation.html">الحجوزات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li class="nav-item">
+                    <a href="developers.html" class="nav-link">فريق التطوير  </a>
+                </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>معلومات الاتصال</h4>
+                    <p>📞 0123456789</p>
+                    <p>📧 info@althawqa.com</p>
+                    <p>📍 صنعاء، اليمن</p>
+                </div>
+                <div class="footer-section">
+                    <h4>مواعيد العمل</h4>
+                    <p>الأحد - الخميس: 7 ص - 12 م</p>
+                    <p>الجمعة - السبت: 1 ظ - 12 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 مطعم الذواقة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/reservation.js"></script>
+</body>
+</html>
